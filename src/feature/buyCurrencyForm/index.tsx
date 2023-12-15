@@ -27,7 +27,7 @@ const Authentication = () => {
   useEffect(() => {
     const temp = $user.user?.wallets.filter((v) => v.charCode !== $user.walletBuy) || [];
 
-    setWallet(temp[0].id || '');
+    if (temp.length) setWallet(temp[0].id);
     setOption(temp);
   }, []);
 
