@@ -25,6 +25,8 @@ const Authentication = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    console.log('$user.user', $user.user);
+
     const temp = $user.user?.wallets.filter((v) => v.charCode !== $user.walletBuy) || [];
 
     if (temp.length) setWallet(temp[0].id);
