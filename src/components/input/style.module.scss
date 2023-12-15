@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 10px;
+
+  .input {
+    min-width: 300px;
+    width: 100%;
+    flex: 1;
+    padding-right: 3px;
+  }
+
+  .buttonBlock {
+    display: flex;
+    .divider {
+      height: 35px;
+      margin: 0.5px;
+    }
+
+    .button {
+      color: grey;
+      padding: 5px;
+      margin: 0 2px;
+    }
+  }
+}

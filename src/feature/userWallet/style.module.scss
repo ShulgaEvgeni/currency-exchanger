@@ -1,0 +1,32 @@
+.mainBlock {
+  min-height: 300px;
+  display: flex;
+
+  .user {
+    .walletsBlock {
+      .title {
+        margin-bottom: 7px;
+      }
+
+      .wallets {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .button {
+          box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.7);
+          border-radius: 6px;
+          width: 160px;
+        }
+      }
+    }
+  }
+
+  .noUser {
+    margin: auto;
+    text-align: center;
+    .button {
+      margin-top: 10px;
+    }
+  }
+}

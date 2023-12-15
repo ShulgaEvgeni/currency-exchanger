@@ -1,0 +1,32 @@
+.form {
+  width: 300px;
+
+  .button {
+    margin-top: 15px;
+  }
+
+  .tabs {
+    margin-bottom: 15px;
+    .tab {
+      flex: 1;
+    }
+  }
+
+  .card {
+    padding: 8px 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .input {
+      min-width: 0;
+    }
+
+    .inputs {
+      display: flex;
+      gap: 10px;
+      .input {
+        flex: 1;
+      }
+    }
+  }
+}

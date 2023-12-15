@@ -1,0 +1,16 @@
+.card {
+  box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.7);
+  padding: 10px 10px;
+  border-radius: 6px;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .info {
+    text-align: start;
+  }
+
+  .button {
+    margin-top: 5px;
+  }
+}

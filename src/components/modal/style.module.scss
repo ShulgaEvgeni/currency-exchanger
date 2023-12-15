@@ -1,0 +1,31 @@
+.backdrop {
+  background-color: rgba(155, 149, 171, 0.4);
+}
+
+.presentation {
+  padding: auto;
+  display: flex;
+}
+
+.modal {
+  margin: auto;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px 10px 15px 10px;
+  position: relative;
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    .buttonBack {
+      margin-right: 15px;
+    }
+    .buttonCross {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+}
