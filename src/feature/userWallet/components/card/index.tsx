@@ -16,7 +16,7 @@ const Card = (props: IProps) => {
       <Box className={$.info}>
         <Typography>{wallet.name}</Typography>
         <Typography>
-          {wallet.charCode}: {wallet.value}
+          {wallet.charCode}: {wallet.value.toFixed(2)}
         </Typography>
       </Box>
       <Button
