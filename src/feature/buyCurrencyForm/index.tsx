@@ -19,7 +19,7 @@ const Authentication = () => {
   });
 
   const [sum, setSum] = useState('0');
-  const [wallet, setWallet] = useState($user.user?.wallets[0].id);
+  const [wallet, setWallet] = useState('');
   const [typeBuy, setTypeBuy] = useState('wallet');
   const [optionsForSelect, setOption] = useState<usersWallets[]>([]);
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ const Authentication = () => {
   useEffect(() => {
     const temp = $user.user?.wallets.filter((v) => v.charCode !== $user.walletBuy) || [];
 
-    setWallet(temp[0].id);
+    setWallet(temp[0].id || '');
     setOption(temp);
   }, []);
 

@@ -19,7 +19,7 @@ const AddValuteForm = () => {
         (v) => $user.user?.wallets.findIndex((w) => w.id === v.charCode) === -1,
       ) || [];
 
-    setValute(temp[0].id);
+    setValute(temp[0].id || '');
     setOption(temp);
   }, [$valute.valutesNow]);
 

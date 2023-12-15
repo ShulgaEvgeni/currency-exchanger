@@ -49,7 +49,7 @@ class valutes {
     this.cacheValutes[parseDataTemp.date] = parseDataTemp;
     this.cacheValutes[dateCache] = parseDataTemp;
 
-    this.cacheValutes
+    this.cacheValutes;
 
     if (this.dateNow === date) {
       this.rateNow = parseDataTemp;
