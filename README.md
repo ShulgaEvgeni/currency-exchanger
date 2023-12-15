@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-Demo(https://shulgaevgeni.github.io/currency-exchanger)
+[Demo](https://shulgaevgeni.github.io/currency-exchanger)
 Использовать раширение CORS Unblock
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
