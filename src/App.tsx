@@ -1,4 +1,3 @@
-import React from 'react';
 import { StyledEngineProvider } from '@mui/material';
 import Routes from './routes';
 

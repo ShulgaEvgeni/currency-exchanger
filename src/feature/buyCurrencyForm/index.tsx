@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Box, Button, Tab, Tabs } from '@mui/material';
+import { Box, Button, SelectChangeEvent, Tab, Tabs } from '@mui/material';
 
 import { userStore as $user } from '../../stores';
 
@@ -31,7 +31,7 @@ const Authentication = () => {
     setOption(temp);
   }, []);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     setTypeBuy(newValue);
   };
 
@@ -97,7 +97,9 @@ const Authentication = () => {
       <Box hidden={typeBuy !== 'wallet'}>
         <Select
           value={wallet}
-          onChange={(e) => setWallet(e.target.value)}
+          onChange={(e: SelectChangeEvent<unknown>) => {
+            setWallet(e.target.value as string);
+          }}
           options={optionsForSelect}
         />
       </Box>

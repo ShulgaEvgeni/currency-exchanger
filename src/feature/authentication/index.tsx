@@ -19,7 +19,7 @@ const Authentication = () => {
 
   const [typeSign, setTypeSign] = useState('signin');
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     setTypeSign(newValue);
   };
 
